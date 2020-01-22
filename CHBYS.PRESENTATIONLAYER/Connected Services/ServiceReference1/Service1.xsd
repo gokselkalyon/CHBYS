@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="c_imports_export">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="cargo_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="country" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="county" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="document_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="intermediary_bank" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="payment_method" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="suppliers" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="transport_type" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_imports_export" nillable="true" type="tns:c_imports_export" />
+  <xs:complexType name="c_inventory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ekleyen_Kullanici" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="authorization_code" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="main_unit" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="payment_plan" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="product_name_1" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="quantity" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="shelf_life" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="status" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="suppliers" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="warranty_period" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_inventory" nillable="true" type="tns:c_inventory" />
+  <xs:complexType name="c_main_unit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Unit_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="comment" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_main_unit" nillable="true" type="tns:c_main_unit" />
+  <xs:complexType name="c_natification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ekleyenkullanici" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="zaman" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_natification" nillable="true" type="tns:c_natification" />
+  <xs:complexType name="c_order">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cost" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="currency" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="document_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="order_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ordered_goods" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="payment_plan" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="slip_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="supliers" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="total" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="vehicle" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_order" nillable="true" type="tns:c_order" />
+  <xs:complexType name="c_payment_method">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Method" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_payment_method" nillable="true" type="tns:c_payment_method" />
+  <xs:complexType name="c_payment_plan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ekleyen_Kullanici" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="discount" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statu" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_payment_plan" nillable="true" type="tns:c_payment_plan" />
+  <xs:complexType name="c_product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="brand" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="group_code" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="product_type" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="status" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_product" nillable="true" type="tns:c_product" />
+  <xs:complexType name="c_product_refund">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="reason_for_return" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="return_quantity" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="returned_date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="returned_product" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="vehicle" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_product_refund" nillable="true" type="tns:c_product_refund" />
+  <xs:complexType name="c_product_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ekleyen_Kullanici" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="date_of_registration" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_product_type" nillable="true" type="tns:c_product_type" />
+  <xs:complexType name="c_repository">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="country" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="county" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="repository_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_repository" nillable="true" type="tns:c_repository" />
+  <xs:complexType name="c_sector">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Kodu" type="xs:int" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sector_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_sector" nillable="true" type="tns:c_sector" />
+  <xs:complexType name="c_shipment_slip">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="buyer_company" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cargo_company" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cargo_delivery_date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="cargo_invoice_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="delivery" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pakaging" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="payment_plan" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="sending_company" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="statu" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="total" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="voucher_no" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_shipment_slip" nillable="true" type="tns:c_shipment_slip" />
+  <xs:complexType name="c_sold_product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cost" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="currency" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="document_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="payment_plan" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="sold_product1" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="total" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="vehicle" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_sold_product" nillable="true" type="tns:c_sold_product" />
+  <xs:complexType name="c_supplier">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="E_invoice_type" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="E_mail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ekleyen_Kullanici" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Tax_Administration" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Tax_Administration_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="adress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="appellation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="country" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="county" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mobilephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="payment_plan" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="post_code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sector" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="statu" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="suppliers_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="suppliers_type" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="telephone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="telephone_2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_supplier" nillable="true" type="tns:c_supplier" />
+  <xs:complexType name="c_suppliers_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="suppliers_type1" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_suppliers_type" nillable="true" type="tns:c_suppliers_type" />
+  <xs:complexType name="c_Tax_Administration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Tax_Administration_code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tax_Administration_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Tax_Administration" nillable="true" type="tns:c_Tax_Administration" />
+  <xs:complexType name="c_transport_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_transport_type" nillable="true" type="tns:c_transport_type" />
+  <xs:complexType name="c_User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="authority" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="company" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="date_of_registration" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="employee" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="user_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_User" nillable="true" type="tns:c_User" />
+  <xs:complexType name="c_Users_authority">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="authority" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_Users_authority" nillable="true" type="tns:c_Users_authority" />
+  <xs:complexType name="c_authorization_code">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="YETKI_KODU" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="YETKI_TIPI" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_authorization_code" nillable="true" type="tns:c_authorization_code" />
+  <xs:complexType name="c_authorization_code_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="type_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_authorization_code_type" nillable="true" type="tns:c_authorization_code_type" />
+  <xs:complexType name="c_bank">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="bank_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_bank" nillable="true" type="tns:c_bank" />
+  <xs:complexType name="c_barcode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ekleyen_Kullanici" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="barcode1" type="xs:int" />
+      <xs:element minOccurs="0" name="comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fiyati" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="product" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_barcode" nillable="true" type="tns:c_barcode" />
+  <xs:complexType name="c_brand">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="brand_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_brand" nillable="true" type="tns:c_brand" />
+  <xs:complexType name="c_cargo_company">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="buyer_payment" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="cargo_company1" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="payment_plan" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="statu" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="suppliers" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_cargo_company" nillable="true" type="tns:c_cargo_company" />
+  <xs:complexType name="c_cargo_company_name">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="company_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_cargo_company_name" nillable="true" type="tns:c_cargo_company_name" />
+  <xs:complexType name="c_city">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="city_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="plate_code" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_city" nillable="true" type="tns:c_city" />
+  <xs:complexType name="c_company">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Tax_Administration" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Tax_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="company_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="company_type" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="country" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="county" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_company" nillable="true" type="tns:c_company" />
+  <xs:complexType name="c_company_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="type_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_company_type" nillable="true" type="tns:c_company_type" />
+  <xs:complexType name="c_country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Country_name_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="E_declaration" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="country_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="country_plate_sign" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_country" nillable="true" type="tns:c_country" />
+  <xs:complexType name="c_county">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="county_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="plate_code" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_county" nillable="true" type="tns:c_county" />
+  <xs:complexType name="c_currency">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="unit" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_currency" nillable="true" type="tns:c_currency" />
+  <xs:complexType name="c_discountcart">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ekleyen_Kullanici" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Formula" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="currency" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="figure" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statu" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="type_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="value" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_discountcart" nillable="true" type="tns:c_discountcart" />
+  <xs:complexType name="c_E_invoice_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="E_invoice_type_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_E_invoice_type" nillable="true" type="tns:c_E_invoice_type" />
+  <xs:complexType name="c_e_waybill">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Grand_total" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="KDV" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="barcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo_company" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cargo_shipping_date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="cost" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="delivery_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="discount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="documnet_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="payment_plan" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="receipt_no" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="repository_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="substation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="subtotal" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="suppliers" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="total" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="vehicle" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="waybill_no" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_e_waybill" nillable="true" type="tns:c_e_waybill" />
+  <xs:complexType name="c_employee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="employee_TC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="employee_lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="employee_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="employee_position" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="performans" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="salary" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_employee" nillable="true" type="tns:c_employee" />
+  <xs:complexType name="c_employee_overtime">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="business_finish" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="business_start" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="employee" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_employee_overtime" nillable="true" type="tns:c_employee_overtime" />
+  <xs:complexType name="c_employee_permission">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="employee" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="permission_date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="permission_reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_employee_permission" nillable="true" type="tns:c_employee_permission" />
+  <xs:complexType name="c_employee_position">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="position" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_employee_position" nillable="true" type="tns:c_employee_position" />
+  <xs:complexType name="c_group_code">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="explanation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="group_type" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="statu" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_group_code" nillable="true" type="tns:c_group_code" />
+  <xs:complexType name="c_group_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="type_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="c_group_type" nillable="true" type="tns:c_group_type" />
+</xs:schema>

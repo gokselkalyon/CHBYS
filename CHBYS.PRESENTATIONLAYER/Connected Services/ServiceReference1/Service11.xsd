@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:58418/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" />
+  <xs:import schemaLocation="http://localhost:58418/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" />
+  <xs:element name="group_type_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_type_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="group_type_ReadResult" nillable="true" type="q1:ArrayOfV_group_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_type_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_type_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports_export_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q2:c_imports_export" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports_export_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports_export_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q3:c_imports_export" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports_export_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports_export_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports_export_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="imports_export_ReadResult" nillable="true" type="q4:ArrayOfV_imports_export" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports_export_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports_export_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inventory_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q5:c_inventory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inventory_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inventory_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q6:c_inventory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inventory_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inventory_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inventory_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="inventory_ReadResult" nillable="true" type="q7:ArrayOfV_inventory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inventory_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inventory_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="main_unit_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q8:c_main_unit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="main_unit_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="main_unit_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q9:c_main_unit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="main_unit_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="main_unit_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="main_unit_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="main_unit_ReadResult" nillable="true" type="q10:ArrayOfV_main_unit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="main_unit_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="main_unit_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="natification_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q11:c_natification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="natification_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="natification_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q12:c_natification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="natification_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="natification_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="natification_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="natification_ReadResult" nillable="true" type="q13:ArrayOfV_natification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="natification_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="natification_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="order_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q14:c_order" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="order_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="order_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q15:c_order" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="order_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="order_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="order_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="order_ReadResult" nillable="true" type="q16:ArrayOfV_orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="order_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="order_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_method_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q17:c_payment_method" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_method_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_method_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q18:c_payment_method" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_method_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_method_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_method_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="payment_method_ReadResult" nillable="true" type="q19:ArrayOfV_payment_method" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_method_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_method_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_plan_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q20:c_payment_plan" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_plan_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_plan_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q21:c_payment_plan" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_plan_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_plan_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_plan_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="payment_plan_ReadResult" nillable="true" type="q22:ArrayOfV_payment_plan" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_plan_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="payment_plan_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q23:c_product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q24:c_product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="product_ReadResult" nillable="true" type="q25:ArrayOfV_product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_refund_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q26:c_product_refund" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_refund_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_refund_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q27:c_product_refund" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_refund_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_refund_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_refund_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="product_refund_ReadResult" nillable="true" type="q28:ArrayOfV_product_refund" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_refund_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_refund_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_type_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q29:c_product_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_type_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_type_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q30:c_product_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_type_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_type_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_type_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="product_type_ReadResult" nillable="true" type="q31:ArrayOfV_product_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_type_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="product_type_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="repository_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q32:c_repository" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="repository_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="repository_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q33:c_repository" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="repository_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="repository_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="repository_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="repository_ReadResult" nillable="true" type="q34:ArrayOfV_repository" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="repository_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="repository_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sector_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q35:c_sector" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sector_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sector_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q36:c_sector" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sector_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sector_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sector_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="sector_ReadResult" nillable="true" type="q37:ArrayOfV_sector" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sector_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sector_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipment_slip_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q38:c_shipment_slip" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipment_slip_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipment_slip_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q39:c_shipment_slip" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipment_slip_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipment_slip_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipment_slip_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="shipment_slip_ReadResult" nillable="true" type="q40:ArrayOfV_shipment_slip" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipment_slip_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shipment_slip_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sold_product_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q41:c_sold_product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sold_product_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sold_product_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q42:c_sold_product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sold_product_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sold_product_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sold_product_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="sold_product_ReadResult" nillable="true" type="q43:ArrayOfV_sold_product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sold_product_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sold_product_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplier_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q44:c_supplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplier_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplier_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q45:c_supplier" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplier_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplier_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplier_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="supplier_ReadResult" nillable="true" type="q46:ArrayOfV_suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplier_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supplier_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="suppliers_type_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q47:c_suppliers_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="suppliers_type_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="suppliers_type_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q48:c_suppliers_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="suppliers_type_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="suppliers_type_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="suppliers_type_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="suppliers_type_ReadResult" nillable="true" type="q49:ArrayOfV_suppliers_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="suppliers_type_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="suppliers_type_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax_Administration_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q50:c_Tax_Administration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax_Administration_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax_Administration_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q51:c_Tax_Administration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax_Administration_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax_Administration_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax_Administration_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="Tax_Administration_ReadResult" nillable="true" type="q52:ArrayOfV_Tax_Administration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax_Administration_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tax_Administration_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transport_type_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q53:c_transport_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transport_type_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transport_type_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q54:c_transport_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transport_type_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transport_type_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transport_type_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="transport_type_ReadResult" nillable="true" type="q55:ArrayOfV_transport_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transport_type_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transport_type_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="User_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q56:c_User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="User_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="User_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q57:c_User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="User_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="User_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="User_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="User_ReadResult" nillable="true" type="q58:ArrayOfV_Users" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="User_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="User_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Users_authority_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q59:c_Users_authority" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Users_authority_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Users_authority_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q60:c_Users_authority" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Users_authority_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Users_authority_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Users_authority_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="Users_authority_ReadResult" nillable="true" type="q61:ArrayOfV_Users_authority" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Users_authority_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Users_authority_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="loginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q62:c_authorization_code" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q63:c_authorization_code" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="authorization_code_ReadResult" nillable="true" type="q64:ArrayOfV_authorization_code" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_type_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q65:c_authorization_code_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_type_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_type_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q66:c_authorization_code_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_type_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_type_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_type_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="authorization_code_type_ReadResult" nillable="true" type="q67:ArrayOfV_authorization_code_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_type_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authorization_code_type_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bank_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q68:c_bank" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bank_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bank_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q69:c_bank" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bank_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bank_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bank_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="bank_ReadResult" nillable="true" type="q70:ArrayOfV_bank" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bank_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bank_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barcode_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q71:c_barcode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barcode_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barcode_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q72:c_barcode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barcode_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barcode_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barcode_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="barcode_ReadResult" nillable="true" type="q73:ArrayOfV_barcode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barcode_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barcode_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brand_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q74:c_brand" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brand_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brand_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q75:c_brand" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brand_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brand_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brand_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="brand_ReadResult" nillable="true" type="q76:ArrayOfV_brand" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brand_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="brand_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q77:c_cargo_company" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q78:c_cargo_company" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="cargo_company_ReadResult" nillable="true" type="q79:ArrayOfV_cargo_company" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_name_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q80:c_cargo_company_name" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_name_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_name_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q81:c_cargo_company_name" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_name_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_name_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_name_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="cargo_company_name_ReadResult" nillable="true" type="q82:ArrayOfV_cargo_company_name" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_name_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cargo_company_name_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q83:c_city" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q84:c_city" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="city_ReadResult" nillable="true" type="q85:ArrayOfV_city" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q86:c_company" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q87:c_company" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="company_ReadResult" nillable="true" type="q88:ArrayOfV_company" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_type_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q89:c_company_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_type_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_type_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q90:c_company_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_type_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_type_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="company_type_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q91:c_country" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q92:c_country" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="country_ReadResult" nillable="true" type="q93:ArrayOfV_country" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="country_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="county_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q94:c_county" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="county_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="county_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q95:c_county" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="county_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="county_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="county_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="county_ReadResult" nillable="true" type="q96:ArrayOfV_county" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="county_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="county_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currency_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q97:c_currency" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currency_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currency_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q98:c_currency" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currency_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currency_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currency_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="currency_ReadResult" nillable="true" type="q99:ArrayOfV_currency" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currency_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currency_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discountcart_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q100:c_discountcart" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discountcart_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discountcart_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q101:c_discountcart" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discountcart_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discountcart_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discountcart_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="discountcart_ReadResult" nillable="true" type="q102:ArrayOfV_discountcart" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discountcart_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="discountcart_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E_invoice_type_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q103:c_E_invoice_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E_invoice_type_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E_invoice_type_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q104:c_E_invoice_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E_invoice_type_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E_invoice_type_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E_invoice_type_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="E_invoice_type_ReadResult" nillable="true" type="q105:ArrayOfV_E_invoice_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E_invoice_type_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E_invoice_type_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e_waybill_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q106:c_e_waybill" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e_waybill_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e_waybill_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q107:c_e_waybill" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e_waybill_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e_waybill_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e_waybill_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="e_waybill_ReadResult" nillable="true" type="q108:ArrayOfV_e_waybill" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e_waybill_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e_waybill_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q109:c_employee" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q110:c_employee" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="employee_ReadResult" nillable="true" type="q111:ArrayOfV_employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_overtime_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q112:c_employee_overtime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_overtime_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_overtime_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q113:c_employee_overtime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_overtime_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_overtime_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_overtime_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="employee_overtime_ReadResult" nillable="true" type="q114:ArrayOfV_employee_overtime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_overtime_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_overtime_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_permission_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q115:c_employee_permission" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_permission_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_permission_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q116:c_employee_permission" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_permission_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_permission_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_permission_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="employee_permission_ReadResult" nillable="true" type="q117:ArrayOfV_employee_permission" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_permission_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_permission_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_position_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q118:c_employee_position" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_position_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_position_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q119:c_employee_position" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_position_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_position_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_position_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="employee_position_ReadResult" nillable="true" type="q120:ArrayOfV_employee_position" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_position_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="employee_position_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_code_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q121:c_group_code" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_code_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_code_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q122:c_group_code" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_code_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_code_Read">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_code_ReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" minOccurs="0" name="group_code_ReadResult" nillable="true" type="q123:ArrayOfV_group_code" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_code_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_code_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_type_insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q124:c_group_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_type_insertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_type_update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES.model" minOccurs="0" name="t" nillable="true" type="q125:c_group_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group_type_updateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CHBYS.ENTITIES" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfV_group_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_group_type" nillable="true" type="tns:V_group_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_group_type" nillable="true" type="tns:ArrayOfV_group_type" />
+  <xs:complexType name="V_group_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TIP_ADI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_group_type" nillable="true" type="tns:V_group_type" />
+  <xs:complexType name="ArrayOfV_imports_export">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_imports_export" nillable="true" type="tns:V_imports_export" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_imports_export" nillable="true" type="tns:ArrayOfV_imports_export" />
+  <xs:complexType name="V_imports_export">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BANKA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CARI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOKUMAN_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ILCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KARGO_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="METHOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PARA_BIRIMI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEHIR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TASIMA_TIPI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ULKE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_imports_export" nillable="true" type="tns:V_imports_export" />
+  <xs:complexType name="ArrayOfV_inventory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_inventory" nillable="true" type="tns:V_inventory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_inventory" nillable="true" type="tns:ArrayOfV_inventory" />
+  <xs:complexType name="V_inventory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BARKOD" type="xs:int" />
+      <xs:element minOccurs="0" name="BIRIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CARI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DURUM" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EKLEYEN_KULLANICI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GARANTI_SURESI" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MIKTAR" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ODEME_PLANI_KODU" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RAF_OMRU" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="YETKI_KODU" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_inventory" nillable="true" type="tns:V_inventory" />
+  <xs:complexType name="ArrayOfV_main_unit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_main_unit" nillable="true" type="tns:V_main_unit" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_main_unit" nillable="true" type="tns:ArrayOfV_main_unit" />
+  <xs:complexType name="V_main_unit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BIRIM_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_main_unit" nillable="true" type="tns:V_main_unit" />
+  <xs:complexType name="ArrayOfV_natification">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_natification" nillable="true" type="tns:V_natification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_natification" nillable="true" type="tns:ArrayOfV_natification" />
+  <xs:complexType name="V_natification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CALISAN" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TARIH" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_natification" nillable="true" type="tns:V_natification" />
+  <xs:complexType name="ArrayOfV_orders">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_orders" nillable="true" type="tns:V_orders" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_orders" nillable="true" type="tns:ArrayOfV_orders" />
+  <xs:complexType name="V_orders">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BIRIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CARI_KODU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOKUMAN_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DURUM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FIS_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MALIYET" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ODEME_PLANI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIPARIS_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIPARIS_EDILEN_URUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TARIH" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TOPLAM" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_orders" nillable="true" type="tns:V_orders" />
+  <xs:complexType name="ArrayOfV_payment_method">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_payment_method" nillable="true" type="tns:V_payment_method" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_payment_method" nillable="true" type="tns:ArrayOfV_payment_method" />
+  <xs:complexType name="V_payment_method">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="METHOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_payment_method" nillable="true" type="tns:V_payment_method" />
+  <xs:complexType name="ArrayOfV_payment_plan">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_payment_plan" nillable="true" type="tns:V_payment_plan" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_payment_plan" nillable="true" type="tns:ArrayOfV_payment_plan" />
+  <xs:complexType name="V_payment_plan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DURUM" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="INDIRIM" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="KOD" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="user_name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_payment_plan" nillable="true" type="tns:V_payment_plan" />
+  <xs:complexType name="ArrayOfV_product">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_product" nillable="true" type="tns:V_product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_product" nillable="true" type="tns:ArrayOfV_product" />
+  <xs:complexType name="V_product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DURUM" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MARKA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TIPI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_product" nillable="true" type="tns:V_product" />
+  <xs:complexType name="ArrayOfV_product_refund">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_product_refund" nillable="true" type="tns:V_product_refund" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_product_refund" nillable="true" type="tns:ArrayOfV_product_refund" />
+  <xs:complexType name="V_product_refund">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ARAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IADE_MIKTARI" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IADE_NEDENI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IADE_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="URUN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_product_refund" nillable="true" type="tns:V_product_refund" />
+  <xs:complexType name="ArrayOfV_product_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_product_type" nillable="true" type="tns:V_product_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_product_type" nillable="true" type="tns:ArrayOfV_product_type" />
+  <xs:complexType name="V_product_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEYEN_KULLANICI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KAYIT_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_product_type" nillable="true" type="tns:V_product_type" />
+  <xs:complexType name="ArrayOfV_repository">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_repository" nillable="true" type="tns:V_repository" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_repository" nillable="true" type="tns:ArrayOfV_repository" />
+  <xs:complexType name="V_repository">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DEPO_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ILCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEHIR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="ULKE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_repository" nillable="true" type="tns:V_repository" />
+  <xs:complexType name="ArrayOfV_sector">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_sector" nillable="true" type="tns:V_sector" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_sector" nillable="true" type="tns:ArrayOfV_sector" />
+  <xs:complexType name="V_sector">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="KODU" type="xs:int" />
+      <xs:element minOccurs="0" name="SECTOR_ADI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_sector" nillable="true" type="tns:V_sector" />
+  <xs:complexType name="ArrayOfV_shipment_slip">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_shipment_slip" nillable="true" type="tns:V_shipment_slip" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_shipment_slip" nillable="true" type="tns:ArrayOfV_shipment_slip" />
+  <xs:complexType name="V_shipment_slip">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ALICI_CARI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CARGO_SIRKETI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DURUM" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FIS_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIS_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GONDEREN_CARI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KARGO_FATURA_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KARGO_TESLIM_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ODEME_PLANI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAKETLEME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TESLIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOPLAM_TUTAR" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_shipment_slip" nillable="true" type="tns:V_shipment_slip" />
+  <xs:complexType name="ArrayOfV_sold_product">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_sold_product" nillable="true" type="tns:V_sold_product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_sold_product" nillable="true" type="tns:ArrayOfV_sold_product" />
+  <xs:complexType name="V_sold_product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ARAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BIRIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOKUMAN_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MALIYET" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ODEME_PLANI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SATILAN_URUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TARIH" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TOPLAM" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_sold_product" nillable="true" type="tns:V_sold_product" />
+  <xs:complexType name="ArrayOfV_suppliers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_suppliers" nillable="true" type="tns:V_suppliers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_suppliers" nillable="true" type="tns:ArrayOfV_suppliers" />
+  <xs:complexType name="V_suppliers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ADRES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CARI_KOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CARI_TIPI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEP_TELEFON" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DURUM" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EKLEYEN_KULLANICI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="E_FATURA_TIPI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="E_MAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FAX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ILCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INDIRIM_PLANI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POSTA_KODU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEHIR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEKTOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TELEFON_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEFON_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ULKE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UNVAN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VERGI_DAIRESI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VERGI_KODU" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_suppliers" nillable="true" type="tns:V_suppliers" />
+  <xs:complexType name="ArrayOfV_suppliers_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_suppliers_type" nillable="true" type="tns:V_suppliers_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_suppliers_type" nillable="true" type="tns:ArrayOfV_suppliers_type" />
+  <xs:complexType name="V_suppliers_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CARI_TIPI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_suppliers_type" nillable="true" type="tns:V_suppliers_type" />
+  <xs:complexType name="ArrayOfV_Tax_Administration">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_Tax_Administration" nillable="true" type="tns:V_Tax_Administration" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_Tax_Administration" nillable="true" type="tns:ArrayOfV_Tax_Administration" />
+  <xs:complexType name="V_Tax_Administration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SEHIR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="VERGI_DAIRESI_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VERGI_DAIRESI_KODU" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_Tax_Administration" nillable="true" type="tns:V_Tax_Administration" />
+  <xs:complexType name="ArrayOfV_transport_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_transport_type" nillable="true" type="tns:V_transport_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_transport_type" nillable="true" type="tns:ArrayOfV_transport_type" />
+  <xs:complexType name="V_transport_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TIP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_transport_type" nillable="true" type="tns:V_transport_type" />
+  <xs:complexType name="ArrayOfV_Users">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_Users" nillable="true" type="tns:V_Users" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_Users" nillable="true" type="tns:ArrayOfV_Users" />
+  <xs:complexType name="V_Users">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CALISAN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KAYIT_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="KULLANICI_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIFRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="SIRKET" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YETKI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_Users" nillable="true" type="tns:V_Users" />
+  <xs:complexType name="ArrayOfV_Users_authority">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_Users_authority" nillable="true" type="tns:V_Users_authority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_Users_authority" nillable="true" type="tns:ArrayOfV_Users_authority" />
+  <xs:complexType name="V_Users_authority">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="YETKI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_Users_authority" nillable="true" type="tns:V_Users_authority" />
+  <xs:complexType name="ArrayOfV_authorization_code">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_authorization_code" nillable="true" type="tns:V_authorization_code" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_authorization_code" nillable="true" type="tns:ArrayOfV_authorization_code" />
+  <xs:complexType name="V_authorization_code">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="YETKI_KODU" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="YETKI_TIPI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_authorization_code" nillable="true" type="tns:V_authorization_code" />
+  <xs:complexType name="ArrayOfV_authorization_code_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_authorization_code_type" nillable="true" type="tns:V_authorization_code_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_authorization_code_type" nillable="true" type="tns:ArrayOfV_authorization_code_type" />
+  <xs:complexType name="V_authorization_code_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="TIP_ADI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_authorization_code_type" nillable="true" type="tns:V_authorization_code_type" />
+  <xs:complexType name="ArrayOfV_bank">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_bank" nillable="true" type="tns:V_bank" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_bank" nillable="true" type="tns:ArrayOfV_bank" />
+  <xs:complexType name="V_bank">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BANKA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_bank" nillable="true" type="tns:V_bank" />
+  <xs:complexType name="ArrayOfV_barcode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_barcode" nillable="true" type="tns:V_barcode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_barcode" nillable="true" type="tns:ArrayOfV_barcode" />
+  <xs:complexType name="V_barcode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BARKOD" type="xs:int" />
+      <xs:element minOccurs="0" name="EKLEYEN_KULLANICI" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="URUN" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="YORUM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fiyati" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_barcode" nillable="true" type="tns:V_barcode" />
+  <xs:complexType name="ArrayOfV_brand">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_brand" nillable="true" type="tns:V_brand" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_brand" nillable="true" type="tns:ArrayOfV_brand" />
+  <xs:complexType name="V_brand">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="KODU" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MARKA_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_brand" nillable="true" type="tns:V_brand" />
+  <xs:complexType name="ArrayOfV_cargo_company">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_cargo_company" nillable="true" type="tns:V_cargo_company" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_cargo_company" nillable="true" type="tns:ArrayOfV_cargo_company" />
+  <xs:complexType name="V_cargo_company">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ALICI_ODER" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CARI_KODU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DURUM" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="KARGO_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ODEME_PLANI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_cargo_company" nillable="true" type="tns:V_cargo_company" />
+  <xs:complexType name="ArrayOfV_cargo_company_name">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_cargo_company_name" nillable="true" type="tns:V_cargo_company_name" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_cargo_company_name" nillable="true" type="tns:ArrayOfV_cargo_company_name" />
+  <xs:complexType name="V_cargo_company_name">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="SIRKET_ADI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_cargo_company_name" nillable="true" type="tns:V_cargo_company_name" />
+  <xs:complexType name="ArrayOfV_city">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_city" nillable="true" type="tns:V_city" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_city" nillable="true" type="tns:ArrayOfV_city" />
+  <xs:complexType name="V_city">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="KODU" type="xs:int" />
+      <xs:element minOccurs="0" name="SEHIR_ADI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_city" nillable="true" type="tns:V_city" />
+  <xs:complexType name="ArrayOfV_company">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_company" nillable="true" type="tns:V_company" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_company" nillable="true" type="tns:ArrayOfV_company" />
+  <xs:complexType name="V_company">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARİHİ" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ILCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEHIR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="SIRKET_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRKET_TIPI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ULKE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VERGI_DAIRESI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VERGI_NO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_company" nillable="true" type="tns:V_company" />
+  <xs:complexType name="ArrayOfV_country">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_country" nillable="true" type="tns:V_country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_country" nillable="true" type="tns:ArrayOfV_country" />
+  <xs:complexType name="V_country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="ULKE_ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ULKE_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ULKE_KODU" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_country" nillable="true" type="tns:V_country" />
+  <xs:complexType name="ArrayOfV_county">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_county" nillable="true" type="tns:V_county" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_county" nillable="true" type="tns:ArrayOfV_county" />
+  <xs:complexType name="V_county">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ILCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KODU" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_county" nillable="true" type="tns:V_county" />
+  <xs:complexType name="ArrayOfV_currency">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_currency" nillable="true" type="tns:V_currency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_currency" nillable="true" type="tns:ArrayOfV_currency" />
+  <xs:complexType name="V_currency">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BIRIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_currency" nillable="true" type="tns:V_currency" />
+  <xs:complexType name="ArrayOfV_discountcart">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_discountcart" nillable="true" type="tns:V_discountcart" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_discountcart" nillable="true" type="tns:ArrayOfV_discountcart" />
+  <xs:complexType name="V_discountcart">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BIRIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEGER" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DURUM" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FORMUL" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="KOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="user_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ŞEKLİ" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_discountcart" nillable="true" type="tns:V_discountcart" />
+  <xs:complexType name="ArrayOfV_E_invoice_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_E_invoice_type" nillable="true" type="tns:V_E_invoice_type" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_E_invoice_type" nillable="true" type="tns:ArrayOfV_E_invoice_type" />
+  <xs:complexType name="V_E_invoice_type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FATURA_TIPI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_E_invoice_type" nillable="true" type="tns:V_E_invoice_type" />
+  <xs:complexType name="ArrayOfV_e_waybill">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_e_waybill" nillable="true" type="tns:V_e_waybill" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_e_waybill" nillable="true" type="tns:ArrayOfV_e_waybill" />
+  <xs:complexType name="V_e_waybill">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARA_TOPLAM" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BARKOD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CARI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEPO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOKUMAN_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GENEL_TOPLAM" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="INDIRIM" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="IRSALIYE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KARGO_SIRKETI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KDV" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MAKBUZ_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MALIYET" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PARA_BIRIMI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="SUBE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TARIH" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TESLIMAT_ADRESI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOPLAM" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="kARGO_GONDERIM_TARIHI" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_e_waybill" nillable="true" type="tns:V_e_waybill" />
+  <xs:complexType name="ArrayOfV_employees">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_employees" nillable="true" type="tns:V_employees" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_employees" nillable="true" type="tns:ArrayOfV_employees" />
+  <xs:complexType name="V_employees">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MAAS" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PERFORMANS" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="POZISYON" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="SOYAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TC" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_employees" nillable="true" type="tns:V_employees" />
+  <xs:complexType name="ArrayOfV_employee_overtime">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_employee_overtime" nillable="true" type="tns:V_employee_overtime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_employee_overtime" nillable="true" type="tns:ArrayOfV_employee_overtime" />
+  <xs:complexType name="V_employee_overtime">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BASLANGIC_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="BITIS_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CALISAN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_employee_overtime" nillable="true" type="tns:V_employee_overtime" />
+  <xs:complexType name="ArrayOfV_employee_permission">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_employee_permission" nillable="true" type="tns:V_employee_permission" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_employee_permission" nillable="true" type="tns:ArrayOfV_employee_permission" />
+  <xs:complexType name="V_employee_permission">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CALISAN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IZIN_NEDENI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IZIN_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_employee_permission" nillable="true" type="tns:V_employee_permission" />
+  <xs:complexType name="ArrayOfV_employee_position">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_employee_position" nillable="true" type="tns:V_employee_position" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_employee_position" nillable="true" type="tns:ArrayOfV_employee_position" />
+  <xs:complexType name="V_employee_position">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="POZISYON" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_employee_position" nillable="true" type="tns:V_employee_position" />
+  <xs:complexType name="ArrayOfV_group_code">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="V_group_code" nillable="true" type="tns:V_group_code" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfV_group_code" nillable="true" type="tns:ArrayOfV_group_code" />
+  <xs:complexType name="V_group_code">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AKTIF" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EKLEME_TARIHI" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GRUP_TIPI" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="KODU" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SIRA_NO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="V_group_code" nillable="true" type="tns:V_group_code" />
+</xs:schema>

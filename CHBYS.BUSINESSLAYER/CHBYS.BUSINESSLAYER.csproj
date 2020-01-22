@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A88E848-C890-4762-942F-022D5CD756FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CHBYS.BUSINESSLAYER</RootNamespace>
+    <AssemblyName>CHBYS.BUSINESSLAYER</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respository\abstractclass\IDataBaseWrite.cs" />
+    <Compile Include="Respository\abstractclass\IDataBaseRead.cs" />
+    <Compile Include="Respository\concreteclass\authorization_code_business.cs" />
+    <Compile Include="Respository\concreteclass\authorization_code_type_business.cs" />
+    <Compile Include="Respository\concreteclass\bank_business.cs" />
+    <Compile Include="Respository\concreteclass\barcode_business.cs" />
+    <Compile Include="Respository\concreteclass\brand_business.cs" />
+    <Compile Include="Respository\concreteclass\cargo_company_business.cs" />
+    <Compile Include="Respository\concreteclass\cargo_company_name_business.cs" />
+    <Compile Include="Respository\concreteclass\city_business.cs" />
+    <Compile Include="Respository\concreteclass\company_business.cs" />
+    <Compile Include="Respository\concreteclass\company_type_business.cs" />
+    <Compile Include="Respository\concreteclass\country_business.cs" />
+    <Compile Include="Respository\concreteclass\county_business.cs" />
+    <Compile Include="Respository\concreteclass\currency_business.cs" />
+    <Compile Include="Respository\concreteclass\discountcart_business.cs" />
+    <Compile Include="Respository\concreteclass\employee_business.cs" />
+    <Compile Include="Respository\concreteclass\employee_overtime_business.cs" />
+    <Compile Include="Respository\concreteclass\employee_permission_business.cs" />
+    <Compile Include="Respository\concreteclass\employee_position_business.cs" />
+    <Compile Include="Respository\concreteclass\E_invoice_type_business.cs" />
+    <Compile Include="Respository\concreteclass\e_waybill_business.cs" />
+    <Compile Include="Respository\concreteclass\group_code_business.cs" />
+    <Compile Include="Respository\concreteclass\group_type_business.cs" />
+    <Compile Include="Respository\concreteclass\imports_export_business.cs" />
+    <Compile Include="Respository\concreteclass\inventory_business.cs" />
+    <Compile Include="Respository\concreteclass\main_unit_business.cs" />
+    <Compile Include="Respository\concreteclass\natification_business.cs" />
+    <Compile Include="Respository\concreteclass\order_business.cs" />
+    <Compile Include="Respository\concreteclass\payment_method_business.cs" />
+    <Compile Include="Respository\concreteclass\payment_plan_business.cs" />
+    <Compile Include="Respository\concreteclass\product_business.cs" />
+    <Compile Include="Respository\concreteclass\product_refund_business.cs" />
+    <Compile Include="Respository\concreteclass\product_type_business.cs" />
+    <Compile Include="Respository\concreteclass\repository_business.cs" />
+    <Compile Include="Respository\concreteclass\sector_business.cs" />
+    <Compile Include="Respository\concreteclass\shipment_slip_business.cs" />
+    <Compile Include="Respository\concreteclass\sold_product_business.cs" />
+    <Compile Include="Respository\concreteclass\suppliers_type_business.cs" />
+    <Compile Include="Respository\concreteclass\supplier_business.cs" />
+    <Compile Include="Respository\concreteclass\Tax_Administration_business.cs" />
+    <Compile Include="Respository\concreteclass\transport_type_business.cs" />
+    <Compile Include="Respository\concreteclass\Users_authority_business.cs" />
+    <Compile Include="Respository\concreteclass\User_business.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CHBYS.ENTITIES\CHBYS.ENTITIES.csproj">
+      <Project>{44ff77e7-bb2f-4bc8-846c-5cf6a262f313}</Project>
+      <Name>CHBYS.ENTITIES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

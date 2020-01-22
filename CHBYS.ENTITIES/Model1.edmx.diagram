@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4889251b67d7475090245e9bf6037764" Name="Diagram1">
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_authorization_code" Width="1.875" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_authorization_code_type" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_bank" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_barcode" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_brand" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_cargo_company" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_cargo_company_name" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_city" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_company" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_country" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_county" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_currency" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_discountcart" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_E_invoice_type" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_e_waybill" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_employee_overtime" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_employee_permission" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_employee_position" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_employees" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_group_code" Width="1.5" PointX="4.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_group_type" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_imports_export" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_inventory" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_main_unit" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_natification" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_orders" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_payment_method" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_payment_plan" Width="1.5" PointX="2.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_product" Width="1.5" PointX="4.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_product_refund" Width="1.5" PointX="6.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_product_type" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_repository" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_sector" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_shipment_slip" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_sold_product" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_suppliers" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_suppliers_type" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_Tax_Administration" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_transport_type" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_Users" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_Users_authority" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_vehicle" Width="1.5" PointX="16.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARIHESAPBILGIYONETIMSISTEMIModel.V_vehicle_type" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

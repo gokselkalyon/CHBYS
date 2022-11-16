@@ -1,2 +1,1 @@
 # carihesapbilgiyonetimsistemi
-final proje
